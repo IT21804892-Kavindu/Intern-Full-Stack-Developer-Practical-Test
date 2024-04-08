@@ -80,7 +80,7 @@ function EditDevice() {
     return (
         <div>
             <Header />
-            <div className="container" style={{ marginTop: "150px" }}>
+            <div className="container" style={{ marginTop: "150px", paddingBottom: '50px'  }} >
                 <div className="row justify-content-center">
                     <div className="col-md-8">
                         <div className="card">
@@ -178,7 +178,7 @@ function EditDevice() {
                                             onChange={(e) => setFormData({ ...formData, image: e.target.files[0] })}
                                         />
                                     </div> */}
-                                    <button type="submit" className="btn btn-primary">
+                                    <button type="submit" className="btn rounded-pill" style={{ width: '200px', background: '#737373', color: 'white' }}>
                                         Update
                                     </button>
                                 </form>
